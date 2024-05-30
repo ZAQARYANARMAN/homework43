@@ -29,12 +29,13 @@
 .container {
     max-width: 1540px;
     width: 100%;
-    background-color: yellow;
+    background-color: rgb(180, 180, 180);
     margin: 0 auto;
 
     // header //
 
     .top {
+        background-color: snow;
         width: 100%;
         padding: 48px 16px;
 
@@ -67,7 +68,6 @@
         display: flex;
         width: 100%;
         height: 1000px;
-        background-color: green;
         flex-direction: column;
         justify-content: center;
         background-image: url(https://www.w3schools.com/w3images/jane.jpg);
@@ -146,48 +146,357 @@
         }
     }
 
-    .bigDiv {
-        width: 70%;
-        background-color: blue;
-        margin: 16px;
-        padding: 12px 24px;
 
-        .aboutDiv {
-            width: 100%;
+    .menuContainer {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
 
-            .aboutPeopleBox {
-                display: flex;
+        .bigDiv {
+            width: 70%;
+            margin: 16px;
+            padding: 12px 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .aboutDiv {
                 width: 100%;
+                background-color: snow;
 
-                flex-direction: column;
-                align-items: center;
+                .aboutPeopleBox {
+                    display: flex;
+                    width: 100%;
 
-                .peopleName {
-                    font-size: 20px;
-                    margin: 10px 0;
-                }
+                    flex-direction: column;
+                    align-items: center;
 
-                .smallDesription1 {
-                    font-size: 15px;
-                    margin: 10px 0;
+                    .peopleName {
+                        font-size: 20px;
+                        margin: 10px 0;
+                    }
 
-                    .smallDesription2 {
-                        color: rgb(173, 173, 173);
+                    .smallDesription1 {
+                        font-size: 15px;
+                        margin: 10px 0;
+
+                        .smallDesription2 {
+                            color: rgb(173, 173, 173);
+                        }
+                    }
+
+                    .peopleImg {
+                        width: 100%;
+                        height: 600px;
+                        padding: 16px 0;
+                    }
+
+                    .peopleText1 {
+                        font-size: 17px;
+                        margin: 15px 0;
+
+                        .peopleText2 {
+                            margin: 10px 0 0 0;
+                        }
                     }
                 }
 
-                .peopleImg {
+                .replaice {
                     width: 100%;
-                    height: 600px;
-                    padding: 16px 0;
+                    background-color: rgba(0, 0, 255, 0);
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 15px 0;
+                    padding: 10px 0;
+
+                    .likeBtn {
+                        font-size: 15px;
+                        padding: 8px 16px;
+                        border: none;
+
+                        .linkeIcon {
+
+                            display: flex;
+                            gap: 5px;
+                        }
+                    }
+
+                    .likeBtn:hover {
+                        background-color: rgba(128, 128, 128, 0.626);
+                    }
+
+                    .replaiesBtn {
+                        font-size: 15px;
+                        color: #FFFFFF;
+                        background-color: black;
+                        padding: 8px 16px;
+                        border: none;
+
+                        .repliesText {
+                            color: black;
+                            background-color: #FFFFFF;
+                            margin-left: 5px;
+                            padding: 1px 8px;
+                        }
+                    }
+
+                    .replaiesBtn:hover {
+                        background-color: rgba(128, 128, 128, 0.626);
+                    }
                 }
 
-                .peopleText1 {
-                    font-size: 17px;
-                    margin: 15px 0;
+                .replicePeopleClose {
+                    display: none;
+                }
 
-                    .peopleText2 {
-                        margin: 10px 0 0 0;
+                .replicePeople {
+                    display: flex;
+                    width: 100%;
+                    flex-wrap: wrap;
+                    margin-bottom: 16px;
+                    gap: 20px;
+
+                    .replaiesLine {
+                        width: 100%;
+                        background-color: rgb(195, 195, 195);
+                        height: 1px;
+                        border: none;
+                        margin-top: 20px;
+                    }
+
+                    .replaiesPeoplePicture {
+                        width: 90px;
+                        height: 100px;
+                        margin-right: 30px;
+                    }
+
+                    .ripliesDiv {
+
+                        .peopleName3 {
+                            font-size: 20px;
+                            margin: 10px 0;
+                            font-weight: 900;
+
+                            .smallText3 {
+                                font-size: 15px;
+                                color: gray;
+                                font-weight: 300;
+                                margin-left: 5px;
+                            }
+                        }
+
+                        .peopleText3 {
+                            font-size: 15px;
+                            margin: 15px 0;
+                            flex-wrap: wrap;
+                        }
+                    }
+                }
+            }
+        }
+
+
+        .bigDiv2 {
+            display: flex;
+            width: 25%;
+            flex-direction: column;
+            margin: 16px 0;
+            gap: 20px;
+
+            .nameDiv {
+                width: 100%;
+                background-color: black;
+                margin-bottom: 30px;
+
+                .name {
+                    font-size: 20px;
+                    color: #FFFFFF;
+                    width: 100%;
+                    margin: 10px 0;
+                    padding: 0 16px;
+                }
+
+                .nameText {
+                    font-size: 17px;
+                    color: #FFFFFF;
+                    width: 100%;
+                    margin: 15px 0;
+                    padding: 0 16px;
+                }
+            }
+
+            .popularPosts {
+                background-color: black;
+                width: 100%;
+
+                .postTitle {
+                    font-size: 20px;
+                    color: #FFFFFF;
+                    margin: 18px 16px;
+                }
+
+                .post1 {
+                    display: flex;
+                    background-color: #FFFFFF;
+                    width: 100%;
+                    padding: 16px;
+                    border-bottom: 1px solid gray;
+
+                    .postPicture1 {
+                        background-image: url(https://www.w3schools.com/w3images/avatar_smoke.jpg);
+                    }
+
+                    .postPicture2 {
+                        background-image: url(https://www.w3schools.com/w3images/bandmember.jpg);
+                    }
+
+                    .postPicture3 {
+                        background-image: url(https://www.w3schools.com/w3images/workshop.jpg);
+                    }
+
+                    .postPicture4 {
+                        background-image: url(https://www.w3schools.com/w3images/avatar_smoke.jpg);
+                        opacity: 0.7;
+                    }
+
+                    .post1Picture {
+                        width: 50px;
+                        height: 55px;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: center;
+                        margin-right: 16px;
+                    }
+
+                    .post1SubDiv {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+
+                        .postText {
+                            font-size: 18px;
+                            height: max-content;
+                        }
+
+                        .postText2 {
+                            font-size: 15px;
+                            margin-top: 5px;
+                        }
+                    }
+                }
+
+                .post1:hover {
+                    background-color: rgb(198, 198, 198);
+                }
+            }
+
+
+            .adversiteDiv {
+                background-color: black;
+                width: 100%;
+
+                .adversiteTitle {
+                    font-size: 20px;
+                    color: #FFFFFF;
+                    margin: 18px 16px;
+                }
+
+                .adversiteSubDiv {
+                    width: 100%;
+                    background-color: #FFFFFF;
+                    padding: 0.15px 16px;
+
+                    .adversiteSubDiv2 {
+                        display: flex;
+                        width: 100%;
+                        background-color: #f1f1f1;
+                        height: 200px;
+                        align-items: center;
+                        margin: 16px 0;
+
+                        .advertiseText {
+                            font-size: 15px;
+                            width: 100%;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+
+
+            .tagsDiv {
+                width: 100%;
+                background-color: black;
+
+                .tagsTitle {
+                    font-size: 20px;
+                    color: #FFFFFF;
+                    margin: 18px 16px;
+                }
+
+                .tagsSubDiv {
+                    display: flex;
+                    width: 100%;
+                    flex-wrap: wrap;
+                    background-color: #FFFFFF;
+                    justify-content: space-between;
+                    padding: 16px;
+
+                    .smallText3 {
+                        font-size: 17px;
+                        color: #FFFFFF;
+                        background-color: black;
+                        padding: 3px 7px;
+                    }
+
+                    .smallText4 {
+                        color: black;
+                        background-color: rgb(188, 188, 188);
+                        margin-top: 10px;
+                        padding: 1px 5px;
+                    }
+                }
+            }
+
+            .inspiration {
+                width: 100%;
+                background-color: black;
+
+                .inspirationTitle {
+                    font-size: 20px;
+                    color: #FFFFFF;
+                    margin: 18px 16px;
+                }
+
+                .inspirationSubDiv {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    background-color: #FFFFFF;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                }
+
+            }
+
+
+            .foloweDiv {
+                width: 100%;
+                background-color: black;
+
+                .foloweTitle {
+                    font-size: 20px;
+                    color: #FFFFFF;
+                    margin: 18px 16px;
+                }
+
+                .foloweSubDiv {
+                    width: 100%;
+                    background-color: #FFFFFF;
+                    padding: 10px;
+
+                    .foloweMeIcon {
+                        font-size: 19px;
                     }
                 }
             }
